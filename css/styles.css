@@ -3,6 +3,7 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   color: var(--primary-text-color);
+  margin: 0;
 }
 :root {
   --secondary-text-color: #212121;
@@ -21,27 +22,72 @@ a {
   text-decoration: none;
   /* Убираем подчёркивание для всех ссылок */
 }
+
 .container {
-  width: 1200px;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-.main-nav {
-  display: flex;
-  align-items: center;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 /* стили хедера */
-header {
-  background-color: var(--background-color);
-}
+
 .logo {
+  display: block;
+  margin-right: 125px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.main-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.main-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts-header {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+header {
+  background-color: var(--background-color);
+}
+
 .logo-accent {
   color: var(--accent-color);
 }
@@ -51,11 +97,7 @@ header {
 .logo-footer {
   color: var(--background-color);
 }
-.navigation-list {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
+
 .navigation-list .navigation-link {
   color: var(--secondary-text-color);
 }
@@ -83,6 +125,8 @@ header {
   color: var(--background-color);
 }
 .hero-title {
+  margin-top: 106px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -90,7 +134,10 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero-button {
+.button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 106px;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -159,6 +206,9 @@ footer {
 }
 /* cтили для portfolio */
 .jobs-button {
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
@@ -167,12 +217,16 @@ footer {
   text-align: center;
   color: var(--secondary-text-color);
 }
+
 .jobs .jobs-button:hover,
 .jobs .jobs-button:focus {
   color: var(--background-color);
   background-color: var(--accent-color);
 }
 .jobs-list {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 16px;
   line-height: 1.88;
 }
