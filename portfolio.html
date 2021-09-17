@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,10 +19,10 @@
   </head>
   <body>
     <!--шапка страцицы-->
-    <header class="page-header">
+    <header class="jobs-item">
       <div class="container main-nav">
         <nav class="header-nav">
-          <a href="./index.html" class="logo"
+          <a href="./index.html" class="logo portfolio"
             ><span class="logo-accent">Web</span><span class="logo-header">Studio</span></a
           >
           <ul class="navigation-list">
@@ -43,79 +46,101 @@
       <section class="section jobs">
         <h1 hidden>Наши работы</h1>
         <div class="container">
-          <ul>
-            <li><button type="button" class="jobs-button">Все</button></li>
-            <li><button type="button" class="jobs-button">Веб-сайты</button></li>
-            <li><button type="button" class="jobs-button">Приложения</button></li>
-            <li><button type="button" class="jobs-button">Дизайн</button></li>
-            <li><button type="button" class="jobs-button">Маркетинг</button></li>
+          <ul class="button-list">
+            <li class="button"><button type="button" class="jobs-button">Все</button></li>
+            <li class="button"><button type="button" class="jobs-button">Веб-сайты</button></li>
+            <li class="button"><button type="button" class="jobs-button">Приложения</button></li>
+            <li class="button"><button type="button" class="jobs-button">Дизайн</button></li>
+            <li class="button"><button type="button" class="jobs-button">Маркетинг</button></li>
           </ul>
           <ul class="jobs-list">
-            <li>
+            <li class="jobs-item">
               <img src="./images/work-img-1-min.jpg" alt="ноутбук" width="370" />
-              <h2 class="jobs-title">Технокряк</h2>
-              <p>Веб-сайт</p>
+              <div class="jobs-article">
+                <h2 class="jobs-title">Технокряк</h2>
+                <p class="jobs-text">Веб-сайт</p>
+              </div>
             </li>
-            <li>
+            <li class="jobs-item">
               <img src="./images/work-img-2-min.jpg" alt="баскетболисты" width="370" />
-              <h2 class="jobs-title">Постер New Orlean vs Golden Star</h2>
-              <p>Дизайн</p>
+              <div class="jobs-article">
+                <h2 class="jobs-title">Постер New Orlean vs Golden Star</h2>
+                <p class="jobs-text">Дизайн</p>
+              </div>
             </li>
-            <li>
+            <li class="jobs-item">
               <img src="./images/work-img-3-min.jpg" alt="логотип ресторана" width="370" />
-              <h2 class="jobs-title">Ресторан Seafood</h2>
-              <p>Приложение</p>
+              <div class="jobs-article">
+                <h2 class="jobs-title">Ресторан Seafood</h2>
+                <p class="jobs-text">Приложение</p>
+              </div>
             </li>
-            <li>
+            <li class="jobs-item">
               <img src="./images/work-img-4-min.jpg" alt="наушники" width="370" />
-              <h2 class="jobs-title">Проект Prime</h2>
-              <p>Маркетинг</p>
+              <div class="jobs-article">
+                <h2 class="jobs-title">Проект Prime</h2>
+                <p class="jobs-text">Маркетинг</p>
+              </div>
             </li>
-            <li>
+            <li class="jobs-item">
               <img src="./images/work-img-5-min.jpg" alt="две коробочки" width="370" />
-              <h2 class="jobs-title">Проект Boxes</h2>
-              <p>Приложение</p>
+              <div class="jobs-article">
+                <h2 class="jobs-title">Проект Boxes</h2>
+                <p class="jobs-text">Приложение</p>
+              </div>
             </li>
-            <li>
+            <li class="jobs-item">
               <img src="./images/work-img-6-min.jpg" alt="монитор" width="370" />
-              <h2 class="jobs-title">Inspiration has no Borders</h2>
-              <p>Веб-сайт</p>
+              <div class="jobs-article">
+                <h2 class="jobs-title">Inspiration has no Borders</h2>
+                <p class="jobs-text">Веб-сайт</p>
+              </div>
             </li>
-            <li>
+            <li class="jobs-item">
               <img src="./images/work-img-7-min.jpg" alt="открытая книга" width="370" />
-              <h2 class="jobs-title">Издание Limited Edition</h2>
-              <p>Дизайн</p>
+              <div class="jobs-article">
+                <h2 class="jobs-title">Издание Limited Edition</h2>
+                <p class="jobs-text">Дизайн</p>
+              </div>
             </li>
-            <li>
+            <li class="jobs-item">
               <img src="./images/work-img-8-min.jpg" alt="бирка с буквами" width="370" />
-              <h2 class="jobs-title">Проект LAB</h2>
-              <p>Маркетинг</p>
+              <div class="jobs-article">
+                <h2 class="jobs-title">Проект LAB</h2>
+                <p class="jobs-text">Маркетинг</p>
+              </div>
             </li>
-            <li>
+            <li class="jobs-item">
               <img
                 src="./images/work-img-9-min.jpg"
                 alt="человек работающий за ноутбуком"
                 width="370"
               />
-              <h2 class="jobs-title">Growing Business</h2>
-              <p>Приложение</p>
+              <div class="jobs-article">
+                <h2 class="jobs-title">Growing Business</h2>
+                <p class="jobs-text">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <!-- Подвал страницы -->
-    <footer>
-      <a href="./index.html" class="logo"
-        ><span class="logo-accent">Web</span><span class="logo-footer">Studio</span>
-      </a>
-      <address class="location">г. Киев, пр-т Леси Украинки, 26</address>
-      <ul class="contacts-footer">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contacts-footer-link">info@devstudio.com</a>
-        </li>
-        <li><a href="tel:+380961111111" class="contacts-footer-link">+38 096 111 11 11</a></li>
-      </ul>
+    <footer class="page-footer">
+      <div class="container">
+        <a href="./index.html" class="logo footer"
+          ><span class="logo-accent">Web</span><span class="logo-footer">Studio</span>
+        </a>
+        <address class="location">г. Киев, пр-т Леси Украинки, 26</address>
+        <ul class="contacts footer">
+          <li class="contacts footer link">
+            <a href="mailto:info@devstudio.com" class="contacts-footer-link">info@devstudio.com</a>
+          </li>
+          <li class="contacts footer link">
+            <a href="tel:+380961111111" class="contacts-footer-link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
