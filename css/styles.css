@@ -4,6 +4,7 @@ body {
   font-size: 14px;
   color: var(--primary-text-color);
   width: 1600px;
+  margin: 0 auto;
 }
 :root {
   --secondary-text-color: #212121;
