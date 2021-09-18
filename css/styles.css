@@ -3,7 +3,7 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   color: var(--primary-text-color);
-  margin: 0;
+  width: 1600px;
 }
 :root {
   --secondary-text-color: #212121;
@@ -32,11 +32,9 @@ a {
 }
 
 .container {
-  width: 1230px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .section {
   padding-top: 94px;
@@ -127,7 +125,7 @@ header {
 }
 /* стили hero */
 .hero {
-  background-color: var(--hero-and-footer-background-color);
+  background: var(--hero-and-footer-background-color);
   color: var(--background-color);
 }
 .hero-title {
@@ -143,6 +141,10 @@ header {
 .hero-button {
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 32px;
+  border: transparent;
+  border-radius: 4px;
+
   margin-bottom: 106px;
   cursor: pointer;
   font-weight: 700;
@@ -155,6 +157,10 @@ header {
   background-color: var(--accent-color);
   color: var(--background-color);
 }
+.hero-button:hover {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 /* cтили для advantages и occupations */
 .advantages,
 .occupations {
@@ -164,14 +170,41 @@ header {
   line-height: 1.71;
 }
 .advantages-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
+.advantages-text {
+  margin: 0;
+}
+.advantages-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+/* стили для наши занятия */
+.occupations {
+  padding-top: 0;
+}
+.occupations-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.occupations-image:not(:last-child) {
+  margin-right: 30px;
+}
 .occupations-title,
 .team-title {
+  margin: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -183,8 +216,28 @@ header {
   background-color: var(--team-background-color);
 }
 .team-member {
+  margin-top: 30px;
+  margin-bottom: 0;
   font-weight: 500;
   color: var(--secondary-text-color);
+}
+.team-role {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.team-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
+.team-shadow {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team,
 .team-member {
@@ -210,6 +263,20 @@ footer {
 .contacts-footer .contacts-footer-link:hover,
 .contacts-footer .contacts-footer-link:focus {
   color: var(--accent-color);
+}
+.contacts.footer {
+  padding: 0;
+  margin: 0;
+}
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.page-footer.studio {
+  padding-bottom: 57px;
+}
+.contacts.footer.link {
+  margin-top: 9px;
 }
 /* cтили для portfolio */
 .page-header {
@@ -246,6 +313,8 @@ footer {
 .jobs .jobs-button:focus {
   color: var(--background-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .jobs-list {
   display: flex;
@@ -279,14 +348,4 @@ footer {
 .jobs-text {
   margin-top: 4px;
   margin-bottom: 0;
-}
-.contacts.footer {
-  padding: 0;
-}
-.page-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.contacts.footer.link {
-  margin-top: 9px;
 }
