@@ -25,6 +25,8 @@ body {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 li {
   list-style-type: none;
@@ -34,7 +36,16 @@ a {
   text-decoration: none;
   /* Убираем подчёркивание для всех ссылок */
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -77,7 +88,6 @@ a {
 }
 .navigation-list {
   display: flex;
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -121,12 +131,14 @@ header {
   color: var(--accent-color);
 }
 /* стили hero */
+.section.hero {
+  padding: 200px 0px;
+}
 .hero {
   background: var(--hero-and-footer-background-color);
   color: var(--background-color);
 }
 .hero-title {
-  margin-top: 106px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -141,8 +153,6 @@ header {
   padding: 10px 32px;
   border: transparent;
   border-radius: 4px;
-
-  margin-bottom: 106px;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
