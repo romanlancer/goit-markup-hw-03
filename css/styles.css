@@ -188,19 +188,20 @@ header {
 
 .advantages-list {
   display: flex;
-}
-.advantages-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: calc(-1 * var(--card-set-gap));
 }
 .advantages-item {
-  width: 270px;
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-right: var(--card-set-gap);
 }
 /* стили для наши занятия */
 .occupations-list {
   display: flex;
+  margin-right: calc(-1 * var(--card-set-gap));
 }
-.occupations-image:not(:last-child) {
-  margin-right: 30px;
+.occupations-image {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-right: var(--card-set-gap);
 }
 .occupations-title,
 .team-title {
@@ -227,9 +228,11 @@ header {
 }
 .team-list {
   display: flex;
+  margin-right: calc(-1 * var(--card-set-gap));
 }
-.team-card:not(:last-child) {
-  margin-right: 30px;
+.team-card {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-right: var(--card-set-gap);
 }
 .team-shadow {
   background: #ffffff;
@@ -313,16 +316,13 @@ footer {
   flex-wrap: wrap;
   font-size: 16px;
   line-height: 1.88;
+  margin-right: calc(-1 * var(--card-set-gap));
+  margin-bottom: calc(-1 * var(--card-set-gap));
 }
 .jobs-list > .jobs-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
-}
-.jobs-list > .jobs-item:nth-child(3n) {
-  margin-right: 0;
-}
-.jobs-list > .jobs-item:nth-child(n + 7) {
-  margin-bottom: 0;
 }
 
 .jobs-list .jobs-title {
