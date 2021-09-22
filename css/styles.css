@@ -216,7 +216,7 @@ header {
   background-color: var(--team-background-color);
 }
 .team-article {
-  margin: 30px 0px;
+  padding: 30px 0px;
 }
 .team-member {
   font-weight: 500;
