@@ -175,6 +175,7 @@ header {
 }
 .advantages {
   line-height: 1.71;
+  padding-bottom: 0px;
 }
 .advantages-title {
   margin-bottom: 10px;
@@ -184,14 +185,15 @@ header {
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
-.advantages-text {
-  width: 270px;
-}
+
 .advantages-list {
   display: flex;
 }
 .advantages-item:not(:last-child) {
   margin-right: 30px;
+}
+.advantages-item {
+  width: 270px;
 }
 /* стили для наши занятия */
 .occupations-list {
@@ -213,14 +215,15 @@ header {
 .team {
   background-color: var(--team-background-color);
 }
+.team-article {
+  margin: 30px 0px;
+}
 .team-member {
-  margin-top: 30px;
   font-weight: 500;
   color: var(--secondary-text-color);
 }
 .team-role {
   margin-top: 10px;
-  margin-bottom: 30px;
 }
 .team-list {
   display: flex;
@@ -331,6 +334,8 @@ footer {
 }
 .jobs-article {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0px;
 }
 .jobs-text {
   margin-top: 4px;
